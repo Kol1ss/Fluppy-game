@@ -141,7 +141,7 @@ class Game:
             else:
                 for pipe in self.pipes:
                     if pipe.rect.right < self.bird.rect.left and not self.passed_pipe:
-                        self.score += 1  # Увеличиваем на 0.5 для каждой трубы (всего будет +1 за пару)
+                        self.score += 1  # Увеличиваем на 1 для каждой трубы (всего будет +1 за пару)
                         self.passed_pipe = True
 
             # Отображение счета
